@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Pizzaria</title>
+</head>
+<body onload="preencherTabela()">
+    <header>
+        <h1>Pizzaria Remy</h1>
+            <a href="../carrinho/carrinho.html" class="cabec">Carrinho</a>
+            <a href="../cardapio/cardapio.html" class="cabec">Cardápio</a>
+            <a href="../pedidos/pedidos.html" class="cabec">Pedidos</a>
+    </header>
+    <main>
+        <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>sabor</th>
+                    <th>preço</th>
+                    <th>excluir</th>
+                </tr>
+            </thead>
+            <tbody id="tcorpo">
+            </tbody>
+        </table>
+    </div>
+    </main>
+    <footer>
+        <button class="cabec" id="btEnviar" onclick="cadastrarLocal()">Enviar pedido</button>
+    </footer>
+</body>
+<script src="carrinho.js"></script>
+</html>

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    background-color: #808080;
+}
+.cabec{
+    display: flex;
+    border: 2px solid #e2e062;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #e2e062;
+    font-family: 'League Spartan', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    color: black;
+    
+}
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 250px;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    overflow: auto;
+    background-image: url(../cardapio/assets/fundo.jpg);
+}
+main div{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 250px;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    overflow: auto;  
+    background-color: #ffffff70;
+}
+table{
+    width: 100%;
+    text-align: center;
+    padding: 0 25px;
+}
+tr, th{
+    width: 20%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 25px;
+    padding: 5px;
+    text-shadow: 5px 5px 10px white;
+}
+
+
+h1{
+    font-family: 'League Spartan', sans-serif;
+}
+tr{
+    background-color: #8080807e;
+}
+tr:nth-child(even){
+    background-color: #5353537c;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    padding: 30px;
+    background-color: #808080;
+}
+.modal{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corpoModal{
+    position: relative;
+    border: none;
+    top: 20vh;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #808080;
+    padding: 20px;
+    text-align: center;
+    gap: 15px;
+}
+.oculto{
+    display: none;
+}
+

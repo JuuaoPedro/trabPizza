@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cardapio.css">
+    <title>Pizzaria</title>
+</head>
+<body onload="preencherTabela()">
+    <header>
+        <h1>Pizzaria Remy</h1>
+            <a href="../carrinho/carrinho.html" class="cabec">Carrinho</a>
+            <a href="../cardapio/cardapio.html" class="cabec">Cardápio</a>
+            <a href="../pedidos/pedidos.html" class="cabec">Pedidos</a>
+    </header>
+    <main>
+        <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>sabor</th>
+                    <th>preço</th>
+                    <th>detalhes</th>
+                </tr>
+            </thead>
+            <tbody id="tcorpo">
+            </tbody>
+        </table>
+    </div>
+    </main>
+    <footer>
+        <p>instagram: @PizzaDoRemy</p>
+        <p>YouTube: PizzariaDoRemy</p>
+        <p>Ifood: Pizzaria Remy</p>
+    </footer>
+    <div id="detalhes" class="modal oculto">
+        <div class="corpoModal">
+            <h1>Detalhes</h1>
+            <p id="id"></p>
+            <p id="nome"></p>
+            <p id="preco"></p>
+            <p id="descricao"></p>
+            <button class="cabec" id="btadd" onclick="cadastrarLocal()">Adicionar ao carrinho</button>
+            <button class="cabec" id="btFechar">Fechar</button>
+        </div>
+    </div>
+</body>
+<script src="cardapio.js"></script>
+</html>
